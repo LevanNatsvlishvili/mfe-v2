@@ -10,16 +10,16 @@ function App() {
           <h1>App route</h1>
           <ul>
             <li>
-              <Link to="/">Dashboard</Link>
+              <Link to="dashboard">Dashboard</Link>
             </li>
             <li>
-              <Link to="users">Users</Link> {/* Link to 'users' instead of '/users' */}
+              <Link to="users">Users</Link>
             </li>
           </ul>
         </header>
         <Routes>
-          <Route path="/dashboard" element={<Dashboard />} /> {/* This will render on '/app/' */}
-          <Route path="users" element={<Users />} /> {/* This will render on '/app/users' */}
+          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="users" element={<Users />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -180,9 +180,6 @@ importers:
 
   website:
     dependencies:
-      home:
-        specifier: workspace:*
-        version: link:../packages/home
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -192,6 +189,9 @@ importers:
       react-router-dom:
         specifier: ^6.27.0
         version: 6.27.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      shared:
+        specifier: workspace:*
+        version: link:../packages/shared
     devDependencies:
       '@eslint/js':
         specifier: ^9.13.0
